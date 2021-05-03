@@ -1,0 +1,10 @@
+Z:\Projects\MediaTek86\MediaTek86\bin\Debug\MediaTek86.exe.config
+Z:\Projects\MediaTek86\MediaTek86\bin\Debug\MediaTek86.exe
+Z:\Projects\MediaTek86\MediaTek86\bin\Debug\MediaTek86.pdb
+Z:\Projects\MediaTek86\MediaTek86\obj\Debug\MediaTek86.csprojAssemblyReference.cache
+Z:\Projects\MediaTek86\MediaTek86\obj\Debug\MediaTek86.Home.resources
+Z:\Projects\MediaTek86\MediaTek86\obj\Debug\MediaTek86.Properties.Resources.resources
+Z:\Projects\MediaTek86\MediaTek86\obj\Debug\MediaTek86.csproj.GenerateResource.cache
+Z:\Projects\MediaTek86\MediaTek86\obj\Debug\MediaTek86.csproj.CoreCompileInputs.cache
+Z:\Projects\MediaTek86\MediaTek86\obj\Debug\MediaTek86.exe
+Z:\Projects\MediaTek86\MediaTek86\obj\Debug\MediaTek86.pdb
