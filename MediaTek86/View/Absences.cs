@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MediaTek86
+namespace MediaTek86.View
 {
-    public partial class Home : Form
+    public partial class Absences : Form
     {
-        public Home()
+        public Absences()
         {
             InitializeComponent();
-        }
-
-        private void Home_Load(object sender, EventArgs e)
-        {
-           
         }
     }
 }

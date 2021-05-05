@@ -8,18 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MediaTek86
+namespace MediaTek86.View
 {
-    public partial class Home : Form
+    public partial class PopUpAbs : Form
     {
-        public Home()
+        public PopUpAbs()
         {
             InitializeComponent();
         }
 
-        private void Home_Load(object sender, EventArgs e)
-        {
-           
-        }
+ 
     }
 }

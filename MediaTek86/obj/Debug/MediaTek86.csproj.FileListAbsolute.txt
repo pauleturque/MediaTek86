@@ -8,3 +8,7 @@ Z:\Projects\MediaTek86\MediaTek86\obj\Debug\MediaTek86.csproj.GenerateResource.c
 Z:\Projects\MediaTek86\MediaTek86\obj\Debug\MediaTek86.csproj.CoreCompileInputs.cache
 Z:\Projects\MediaTek86\MediaTek86\obj\Debug\MediaTek86.exe
 Z:\Projects\MediaTek86\MediaTek86\obj\Debug\MediaTek86.pdb
+Z:\Projects\MediaTek86\MediaTek86\obj\Debug\MediaTek86.View.Absences.resources
+Z:\Projects\MediaTek86\MediaTek86\obj\Debug\MediaTek86.View.Connection.resources
+Z:\Projects\MediaTek86\MediaTek86\obj\Debug\MediaTek86.View.PopUpAbs.resources
+Z:\Projects\MediaTek86\MediaTek86\obj\Debug\MediaTek86.View.PopUpPersonnel.resources
