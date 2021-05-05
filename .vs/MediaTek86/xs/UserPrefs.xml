@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{0F04501B-8AB2-47C6-AF2E-F348A8626A2F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MediaTek86/View/Connection.Designer.cs">
+    <Files>
+      <File FileName="MediaTek86/View/Connection.cs" Line="1" Column="1" />
+      <File FileName="MediaTek86/View/Connection.Designer.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MediaTek86" expanded="True">
+            <Node name="MediaTek86" expanded="True">
+              <Node name="View" expanded="True">
+                <Node name="Connection.cs" expanded="True">
+                  <Node name="Connection.Designer.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MediaTek86 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
