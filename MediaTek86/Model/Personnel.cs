@@ -24,12 +24,12 @@ namespace MediaTek86.Model
         /// <summary>
         /// getters et setters sur les propriétés
         /// </summary>
-        private int IdPersonnel { get => idpersonnel; }
-        private int IdService { get => idservice; }
-        private string Nom { get => nom; set => nom = value; }
-        private string Prenom { get => prenom; set => prenom = value; }
-        private string Tel { get => tel; set => tel = value; }
-        private string Mail { get => mail; set => mail = value; }
+        public int IdPersonnel { get => idpersonnel; }
+        public int IdService { get => idservice; }
+        public string Nom { get => nom; set => nom = value; }
+        public string Prenom { get => prenom; set => prenom = value; }
+        public string Tel { get => tel; set => tel = value; }
+        public string Mail { get => mail; set => mail = value; }
 
         /// <summary>
         /// constructeur valorisant les propriétés

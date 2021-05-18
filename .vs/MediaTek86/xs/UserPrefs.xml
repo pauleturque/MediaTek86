@@ -1,19 +1,19 @@
 ﻿<Properties StartupConfiguration="{0F04501B-8AB2-47C6-AF2E-F348A8626A2F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MediaTek86/View/Connection.Designer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MediaTek86/Controler/Control.cs">
     <Files>
-      <File FileName="MediaTek86/View/Connection.cs" Line="1" Column="1" />
-      <File FileName="MediaTek86/View/Connection.Designer.cs" Line="1" Column="1" />
+      <File FileName="MediaTek86/ConnectionDB/Connect.cs" Line="1" Column="1" />
+      <File FileName="MediaTek86/Controler/Control.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MediaTek86" expanded="True">
             <Node name="MediaTek86" expanded="True">
-              <Node name="View" expanded="True">
-                <Node name="Connection.cs" expanded="True">
-                  <Node name="Connection.Designer.cs" selected="True" />
-                </Node>
+              <Node name="ConnectionDB" expanded="True" />
+              <Node name="Controler" expanded="True">
+                <Node name="Control.cs" selected="True" />
               </Node>
+              <Node name="View" expanded="True" />
             </Node>
           </Node>
         </State>

@@ -276,18 +276,18 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="F:MediaTek86.Home.components">
+        <member name="F:MediaTek86.frmHome.components">
             <summary>
             Variable nécessaire au concepteur.
             </summary>
         </member>
-        <member name="M:MediaTek86.Home.Dispose(System.Boolean)">
+        <member name="M:MediaTek86.frmHome.Dispose(System.Boolean)">
             <summary>
             Nettoyage des ressources utilisées.
             </summary>
             <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
         </member>
-        <member name="M:MediaTek86.Home.InitializeComponent">
+        <member name="M:MediaTek86.frmHome.InitializeComponent">
             <summary>
             Méthode requise pour la prise en charge du concepteur - ne modifiez pas
             le contenu de cette méthode avec l'éditeur de code.

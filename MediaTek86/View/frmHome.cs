@@ -1,25 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MediaTek86
 {
-    public partial class Home : Form
+    public partial class frmHome : Form
     {
-        public Home()
+
+        private Controler.Control control;
+
+
+        public frmHome(Controler.Control control)
         {
-            InitializeComponent();
+            this.control = control;
         }
 
         private void Home_Load(object sender, EventArgs e)
         {
            
+        }
+
+        private void btnAddPerso_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

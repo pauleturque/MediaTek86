@@ -23,10 +23,10 @@ namespace MediaTek86.Model
         /// <summary>
         /// getters et setters sur les propriétés de la classe
         /// </summary>
-        private int IdPersonnel { get => idpersonnel; }
-        private int IdMotif { get => idmotif; }
-        private DateTime DateDebut { get => datedebut; set => datedebut = value; }
-        private DateTime DateFin { get => datefin; set => datefin = value; }
+        public int IdPersonnel { get => idpersonnel; }
+        public int IdMotif { get => idmotif; }
+        public DateTime DateDebut { get => datedebut; set => datedebut = value; }
+        public DateTime DateFin { get => datefin; set => datefin = value; }
 
 
         /// <summary>
