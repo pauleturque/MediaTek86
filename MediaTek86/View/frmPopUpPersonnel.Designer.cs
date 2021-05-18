@@ -1,7 +1,7 @@
 ﻿
 namespace MediaTek86.View
 {
-    partial class PopUpPersonnel
+    partial class frmPopUpPersonnel
     {
         /// <summary>
         /// Required designer variable.

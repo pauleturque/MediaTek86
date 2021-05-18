@@ -1,7 +1,7 @@
 ﻿
 namespace MediaTek86.View
 {
-    partial class Connection
+    partial class frmConnection
     {
         /// <summary>
         /// Required designer variable.
@@ -98,8 +98,9 @@ namespace MediaTek86.View
             this.btnOk.TabIndex = 6;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = false;
+            //this.btnOk.Click += new System.EventHandler(this.BtnOk_Click);
             // 
-            // Connection
+            // frmConnection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -111,7 +112,7 @@ namespace MediaTek86.View
             this.Controls.Add(this.lblBanner);
             this.Controls.Add(this.lblLogin);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "Connection";
+            this.Name = "frmConnection";
             this.Text = "MediaTek86 - Connexion";
             this.ResumeLayout(false);
             this.PerformLayout();

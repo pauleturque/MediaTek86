@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MediaTek86.View
 {
-    public partial class Connection : Form
+    public partial class frmPopUpPersonnel : Form
     {
-        public Connection()
+        public frmPopUpPersonnel()
         {
             InitializeComponent();
         }
