@@ -29,12 +29,23 @@ namespace MediaTek86.View
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblLogin = new System.Windows.Forms.Label();
             this.lblBanner = new System.Windows.Forms.Label();
-            this.lstBoxAbs = new System.Windows.Forms.CheckedListBox();
-            this.btnAddAbs = new System.Windows.Forms.Button();
-            this.btnDelAbs = new System.Windows.Forms.Button();
-            this.btnModAbs = new System.Windows.Forms.Button();
+            this.txtLogin = new System.Windows.Forms.TextBox();
+            this.lblPwd = new System.Windows.Forms.Label();
+            this.txtPwd = new System.Windows.Forms.TextBox();
+            this.btnOk = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // lblLogin
+            // 
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin.Location = new System.Drawing.Point(492, 348);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(176, 41);
+            this.lblLogin.TabIndex = 0;
+            this.lblLogin.Text = "Identifiant";
             // 
             // lblBanner
             // 
@@ -42,67 +53,66 @@ namespace MediaTek86.View
             this.lblBanner.BackColor = System.Drawing.Color.DarkSlateGray;
             this.lblBanner.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBanner.ForeColor = System.Drawing.Color.White;
-            this.lblBanner.Location = new System.Drawing.Point(0, -3);
+            this.lblBanner.Location = new System.Drawing.Point(-139, -6);
+            this.lblBanner.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblBanner.MaximumSize = new System.Drawing.Size(1468, 224);
             this.lblBanner.Name = "lblBanner";
-            this.lblBanner.Padding = new System.Windows.Forms.Padding(280, 40, 280, 40);
-            this.lblBanner.Size = new System.Drawing.Size(732, 115);
+            this.lblBanner.Padding = new System.Windows.Forms.Padding(560, 77, 560, 77);
+            this.lblBanner.Size = new System.Drawing.Size(1468, 224);
             this.lblBanner.TabIndex = 2;
             this.lblBanner.Text = "MediaTek86";
             // 
-            // lstBoxAbs
+            // txtLogin
             // 
-            this.lstBoxAbs.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstBoxAbs.FormattingEnabled = true;
-            this.lstBoxAbs.Location = new System.Drawing.Point(66, 200);
-            this.lstBoxAbs.Name = "lstBoxAbs";
-            this.lstBoxAbs.Size = new System.Drawing.Size(575, 214);
-            this.lstBoxAbs.TabIndex = 3;
+            this.txtLogin.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLogin.Location = new System.Drawing.Point(437, 410);
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.Size = new System.Drawing.Size(294, 42);
+            this.txtLogin.TabIndex = 3;
             // 
-            // btnAddAbs
+            // lblPwd
             // 
-            this.btnAddAbs.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnAddAbs.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddAbs.Location = new System.Drawing.Point(66, 159);
-            this.btnAddAbs.Name = "btnAddAbs";
-            this.btnAddAbs.Size = new System.Drawing.Size(96, 35);
-            this.btnAddAbs.TabIndex = 4;
-            this.btnAddAbs.Text = "Ajouter";
-            this.btnAddAbs.UseVisualStyleBackColor = false;
+            this.lblPwd.AutoSize = true;
+            this.lblPwd.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPwd.Location = new System.Drawing.Point(468, 508);
+            this.lblPwd.Name = "lblPwd";
+            this.lblPwd.Size = new System.Drawing.Size(223, 41);
+            this.lblPwd.TabIndex = 4;
+            this.lblPwd.Text = "Mot de passe";
             // 
-            // btnDelAbs
+            // txtPwd
             // 
-            this.btnDelAbs.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnDelAbs.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelAbs.Location = new System.Drawing.Point(168, 159);
-            this.btnDelAbs.Name = "btnDelAbs";
-            this.btnDelAbs.Size = new System.Drawing.Size(96, 35);
-            this.btnDelAbs.TabIndex = 5;
-            this.btnDelAbs.Text = "Supprimer";
-            this.btnDelAbs.UseVisualStyleBackColor = false;
+            this.txtPwd.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPwd.Location = new System.Drawing.Point(437, 576);
+            this.txtPwd.Name = "txtPwd";
+            this.txtPwd.Size = new System.Drawing.Size(294, 42);
+            this.txtPwd.TabIndex = 5;
             // 
-            // btnModAbs
+            // btnOk
             // 
-            this.btnModAbs.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnModAbs.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModAbs.Location = new System.Drawing.Point(270, 159);
-            this.btnModAbs.Name = "btnModAbs";
-            this.btnModAbs.Size = new System.Drawing.Size(96, 35);
-            this.btnModAbs.TabIndex = 6;
-            this.btnModAbs.Text = "Modifier";
-            this.btnModAbs.UseVisualStyleBackColor = false;
+            this.btnOk.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnOk.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOk.Location = new System.Drawing.Point(437, 682);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(294, 52);
+            this.btnOk.TabIndex = 6;
+            this.btnOk.Text = "OK";
+            this.btnOk.UseVisualStyleBackColor = false;
             // 
             // Connection
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 445);
-            this.Controls.Add(this.btnModAbs);
-            this.Controls.Add(this.btnDelAbs);
-            this.Controls.Add(this.btnAddAbs);
-            this.Controls.Add(this.lstBoxAbs);
+            this.ClientSize = new System.Drawing.Size(1157, 997);
+            this.Controls.Add(this.btnOk);
+            this.Controls.Add(this.txtPwd);
+            this.Controls.Add(this.lblPwd);
+            this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.lblBanner);
+            this.Controls.Add(this.lblLogin);
+            this.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Connection";
-            this.Text = "Connection";
+            this.Text = "MediaTek86 - Connexion";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,10 +120,11 @@ namespace MediaTek86.View
 
         #endregion
 
+        private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.Label lblBanner;
-        private System.Windows.Forms.CheckedListBox lstBoxAbs;
-        private System.Windows.Forms.Button btnAddAbs;
-        private System.Windows.Forms.Button btnDelAbs;
-        private System.Windows.Forms.Button btnModAbs;
+        private System.Windows.Forms.TextBox txtLogin;
+        private System.Windows.Forms.Label lblPwd;
+        private System.Windows.Forms.TextBox txtPwd;
+        private System.Windows.Forms.Button btnOk;
     }
 }

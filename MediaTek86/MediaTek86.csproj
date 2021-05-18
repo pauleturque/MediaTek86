@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="View\Absences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Absences.Designer.cs">
+      <DependentUpon>Absences.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Connection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\PopUpAbs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PopUpAbs.Designer.cs">
+      <DependentUpon>PopUpAbs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PopUpPersonnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PopUpPersonnel.Designer.cs">
+      <DependentUpon>PopUpPersonnel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\Absences.resx">
+      <DependentUpon>Absences.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Connection.resx">
       <DependentUpon>Connection.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +96,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\PopUpAbs.resx">
+      <DependentUpon>PopUpAbs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PopUpPersonnel.resx">
+      <DependentUpon>PopUpPersonnel.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
