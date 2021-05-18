@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MediaTek86</name>
+    </assembly>
+    <members>
+        <member name="T:MediaTek86.Connection.ConnectionDB">
+            <summary>
+            Classe de connexion à la base de données et création des méthodes de requêtes
+            </summary>
+        </member>
+        <member name="F:MediaTek86.Connection.ConnectionDB.instance">
+            <summary>
+            Instance de la classe
+            </summary>
+        </member>
+        <member name="F:MediaTek86.Connection.ConnectionDB.command">
+            <summary>
+            Déclaration de l'objet MySql permettant l'exécution des requêtes
+            </summary>
+        </member>
+        <member name="F:MediaTek86.Connection.ConnectionDB.connection">
+            <summary>
+            Connexion à la base de données
+            </summary>
+        </member>
+        <member name="F:MediaTek86.Connection.ConnectionDB.reader">
+            <summary>
+            Curseur correspondant à une requête
+            </summary>
+        </member>
+        <member name="M:MediaTek86.Connection.ConnectionDB.#ctor(System.String)">
+            <summary>
+            Constructeur de création d'une nouvelle connexion à la base de données
+            Ouvre la connexion
+            </summary>
+            <param name="urlConnect"></param>
+        </member>
+        <member name="M:MediaTek86.Connection.ConnectionDB.Instanciate(System.String)">
+            <summary>
+            Création d'une instance de la classe 
+            </summary>
+            <param name="urlConnect"></param>
+            <returns>instance de la classe</returns>
+        </member>
+        <member name="M:MediaTek86.Connection.ConnectionDB.ReqSelect(System.String)">
+            <summary>
+            Méthode de requête SQL
+            </summary>
+            <param name="stringReq"></param>
+        </member>
+        <member name="M:MediaTek86.Connection.ConnectionDB.ReqUpdate(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Requête hors select
+            </summary>
+            <param name=""></param>
+            <param name="parameters"></param>
+        </member>
+        <member name="M:MediaTek86.Connection.ConnectionDB.Read">
+            <summary>
+            Essai lecture ligne suivante du curseur
+            </summary>
+            <returns>false si fin de curseur</returns>
+        </member>
+        <member name="M:MediaTek86.Connection.ConnectionDB.Field(System.String)">
+            <summary>
+            Champ du nom contenu en paramètre
+            </summary>
+            <param name="nameField"></param>
+            <returns>champ</returns>
+        </member>
+        <member name="M:MediaTek86.Connection.ConnectionDB.Close">
+            <summary>
+            Fermeture du curseur si ouvert
+            </summary>
+        </member>
+        <member name="F:MediaTek86.dal.AccessDB.urlConnect">
+            <summary>
+            Chaîne de connexion à la BDD
+            </summary>
+        </member>
+        <member name="T:MediaTek86.Modèle.Absences">
+            <summary>
+            Classe correspondant à la table absences de la bdd
+            </summary>
+        </member>
+        <member name="F:MediaTek86.Modèle.Absences.idPersonnel">
+            <summary>
+            Propriétés liées à la table
+            </summary>
+        </member>
+        <member name="P:MediaTek86.Modèle.Absences.IdPersonnel">
+            <summary>
+            Getters sur les propriétés
+            </summary>
+        </member>
+        <member name="M:MediaTek86.Modèle.Absences.#ctor(System.Int32,System.DateTime,System.Int32,System.DateTime)">
+            <summary>
+            Constructeur, valorisation des propriétés
+            </summary>
+            <param name="idPersonnel"></param>
+            <param name="dateDebut"></param>
+            <param name="idMotif"></param>
+            <param name="dateFin"></param>
+        </member>
+        <member name="T:MediaTek86.Model.Motif">
+            <summary>
+            Classe correspondant à la table motif de la bdd
+            </summary>
+        </member>
+        <member name="F:MediaTek86.Model.Motif.idMotif">
+            <summary>
+            Propriétés liées à la table
+            </summary>
+        </member>
+        <member name="P:MediaTek86.Model.Motif.IdMotif">
+            <summary>
+            Getters sur les propriétés de la classe
+            </summary>
+        </member>
+        <member name="M:MediaTek86.Model.Motif.#ctor(System.Int32,System.String)">
+            <summary>
+            Constructeur valorisant les propriétés de la classe
+            </summary>
+            <param name="idMotif"></param>
+            <param name="libelle"></param>
+        </member>
+        <member name="T:MediaTek86.Model.Personnel">
+            <summary>
+            Classe correspondant à la table personnel de la bdd
+            </summary>
+        </member>
+        <member name="F:MediaTek86.Model.Personnel.idPersonnel">
+            <summary>
+            Propriétés correspondant à la table personnel
+            </summary>
+        </member>
+        <member name="P:MediaTek86.Model.Personnel.IdPersonnel">
+            <summary>
+            Getters et setters sur les propriétés 
+            </summary>
+        </member>
+        <member name="M:MediaTek86.Model.Personnel.#ctor(System.Int32,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructeur, valorisation des propriétés
+            </summary>
+            <param name="idPersonnel"></param>
+            <param name="idService"></param>
+            <param name="nom"></param>
+            <param name="prenom"></param>
+            <param name="tel"></param>
+            <param name="mail"></param>
+        </member>
+        <member name="T:MediaTek86.Model.Responsable">
+            <summary>
+            Classe correspondant à la table responsable de la bdd
+            </summary>
+        </member>
+        <member name="F:MediaTek86.Model.Responsable.login">
+            <summary>
+            Propriétés liées à la table
+            </summary>
+        </member>
+        <member name="P:MediaTek86.Model.Responsable.Login">
+            <summary>
+            Getters sur les propriétés
+            </summary>
+        </member>
+        <member name="M:MediaTek86.Model.Responsable.#ctor(System.String,System.String)">
+            <summary>
+            Constructeur valorisant les propriétés de la classe
+            </summary>
+            <param name="login"></param>
+            <param name="pwd"></param>
+        </member>
+        <member name="T:MediaTek86.Model.Service">
+            <summary>
+            Classe correspondant à la table service de la bdd
+            </summary>
+        </member>
+        <member name="F:MediaTek86.Model.Service.idService">
+            <summary>
+            Propriétés liées à la table
+            </summary>
+        </member>
+        <member name="P:MediaTek86.Model.Service.IdService">
+            <summary>
+            Getters sur les propriétés
+            </summary>
+        </member>
+        <member name="M:MediaTek86.Model.Service.#ctor(System.Int32,System.String)">
+            <summary>
+            Constructeur valorisant les propriétés de la classe
+            </summary>
+            <param name="idService"></param>
+            <param name="nom"></param>
+        </member>
+        <member name="F:MediaTek86.View.AbsencesPerso.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MediaTek86.View.AbsencesPerso.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MediaTek86.View.AbsencesPerso.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:MediaTek86.View.Auhtentication.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MediaTek86.View.Auhtentication.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MediaTek86.View.Auhtentication.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:MediaTek86.View.PopUpAbs.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MediaTek86.View.PopUpAbs.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MediaTek86.View.PopUpAbs.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:MediaTek86.View.PopUpPersonnel.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MediaTek86.View.PopUpPersonnel.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MediaTek86.View.PopUpPersonnel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:MediaTek86.Home.components">
+            <summary>
+            Variable nécessaire au concepteur.
+            </summary>
+        </member>
+        <member name="M:MediaTek86.Home.Dispose(System.Boolean)">
+            <summary>
+            Nettoyage des ressources utilisées.
+            </summary>
+            <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        </member>
+        <member name="M:MediaTek86.Home.InitializeComponent">
+            <summary>
+            Méthode requise pour la prise en charge du concepteur - ne modifiez pas
+            le contenu de cette méthode avec l'éditeur de code.
+            </summary>
+        </member>
+        <member name="M:MediaTek86.Program.Main">
+            <summary>
+            Point d'entrée principal de l'application.
+            </summary>
+        </member>
+        <member name="T:MediaTek86.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:MediaTek86.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:MediaTek86.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+    </members>
+</doc>
