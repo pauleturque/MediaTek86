@@ -1,7 +1,7 @@
 ﻿
 namespace MediaTek86.View
 {
-    partial class PopUpAbs
+    partial class frmPopUpAbs
     {
         /// <summary>
         /// Required designer variable.

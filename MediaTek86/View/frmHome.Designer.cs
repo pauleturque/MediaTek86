@@ -142,7 +142,7 @@ namespace MediaTek86
         private System.Windows.Forms.Button btnModPerso;
         private System.Windows.Forms.Button btnAbs;
 
-        Size = new Size(900, 400);
+        
     }
 }
 
