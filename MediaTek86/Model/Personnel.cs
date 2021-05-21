@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace MediaTek86.Model
 {
     /// <summary>
@@ -48,6 +43,11 @@ namespace MediaTek86.Model
             this.prenom = prenom;
             this.tel = tel;
             this.mail = mail;
+        }
+
+        public override string ToString()
+        {
+            return nom + " " + prenom + " " + tel + " " + mail;
         }
     }
 }

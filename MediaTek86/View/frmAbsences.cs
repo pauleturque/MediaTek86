@@ -12,9 +12,21 @@ namespace MediaTek86.View
 {
     public partial class frmAbsences : Form
     {
-        public frmAbsences()
+        private Controler.Control control;
+        public frmAbsences(Controler.Control control)
         {
             InitializeComponent();
+            this.control = control;
+        }
+
+        private void btnAddAbs_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelAbs_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

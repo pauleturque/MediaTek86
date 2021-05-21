@@ -41,10 +41,11 @@ namespace MediaTek86.ConnectionDB
             {
                 connect = new MySqlConnection(connectionString);
                 this.connect.Open();
+                Console.WriteLine("co ok");
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine(e.Message + "la connexion a échoué :( ");
                 this.connect.Close();
             }
         }

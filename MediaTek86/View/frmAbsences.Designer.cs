@@ -42,7 +42,7 @@ namespace MediaTek86.View
             this.lstAbs.FormattingEnabled = true;
             this.lstAbs.Location = new System.Drawing.Point(32, 420);
             this.lstAbs.Name = "lstAbs";
-            this.lstAbs.Size = new System.Drawing.Size(1352, 500);
+            this.lstAbs.Size = new System.Drawing.Size(1352, 494);
             this.lstAbs.TabIndex = 0;
             // 
             // lblBanner
@@ -69,6 +69,7 @@ namespace MediaTek86.View
             this.btnAddAbs.TabIndex = 4;
             this.btnAddAbs.Text = "Ajouter";
             this.btnAddAbs.UseVisualStyleBackColor = false;
+            this.btnAddAbs.Click += new System.EventHandler(this.btnAddAbs_Click);
             // 
             // btnDelAbs
             // 
@@ -80,6 +81,7 @@ namespace MediaTek86.View
             this.btnDelAbs.TabIndex = 5;
             this.btnDelAbs.Text = "Supprimer";
             this.btnDelAbs.UseVisualStyleBackColor = false;
+            this.btnDelAbs.Click += new System.EventHandler(this.btnDelAbs_Click);
             // 
             // btnModAbs
             // 
@@ -92,18 +94,18 @@ namespace MediaTek86.View
             this.btnModAbs.Text = "Modifier";
             this.btnModAbs.UseVisualStyleBackColor = false;
             // 
-            // Absences
+            // frmAbsences
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1414, 956);
+            this.ClientSize = new System.Drawing.Size(268, 0);
             this.Controls.Add(this.btnModAbs);
             this.Controls.Add(this.btnDelAbs);
             this.Controls.Add(this.btnAddAbs);
             this.Controls.Add(this.lblBanner);
             this.Controls.Add(this.lstAbs);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "Absences";
+            this.Name = "frmAbsences";
             this.Text = "Absences";
             this.ResumeLayout(false);
             this.PerformLayout();

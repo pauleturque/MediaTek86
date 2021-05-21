@@ -20,8 +20,8 @@ namespace MediaTek86.Model
         /// <summary>
         /// getters sur les propriétés de la classe
         /// </summary>
-        private string Login { get => login; }
-        private string Pwd { get => pwd; }
+        public string Login { get => login; }
+        public string Pwd { get => pwd; }
 
         /// <summary>
         /// constructeur volorisant les propriétés de la classe

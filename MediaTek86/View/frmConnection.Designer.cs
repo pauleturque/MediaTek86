@@ -98,7 +98,7 @@ namespace MediaTek86.View
             this.btnOk.TabIndex = 6;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = false;
-            //this.btnOk.Click += new System.EventHandler(this.BtnOk_Click);
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // frmConnection
             // 

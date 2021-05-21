@@ -21,7 +21,7 @@ namespace MediaTek86.View
             this.control = control;
         }
 
-        private void BtnOk_Click(object sender, EventArgs e)
+        private void btnOk_Click(object sender, EventArgs e)
         {
             if (!txtLogin.Text.Equals("") && !txtPwd.Text.Equals(""))
             {
@@ -29,12 +29,11 @@ namespace MediaTek86.View
                 {
                     MessageBox.Show("L'identifiant ou le mot de passe sont incorrects !");
                 }
-                else
-                {
-                    MessageBox.Show("Tous les champs doivent être remplis !");
-                }
+            }
+            else
+            {
+                MessageBox.Show("Tous les champs doivent être remplis !");
             }
         }
-
     }
 }

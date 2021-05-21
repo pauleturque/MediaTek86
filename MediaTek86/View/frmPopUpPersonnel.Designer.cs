@@ -48,7 +48,7 @@ namespace MediaTek86.View
             this.txtBoxLastName.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxLastName.Location = new System.Drawing.Point(440, 41);
             this.txtBoxLastName.Name = "txtBoxLastName";
-            this.txtBoxLastName.Size = new System.Drawing.Size(418, 38);
+            this.txtBoxLastName.Size = new System.Drawing.Size(418, 23);
             this.txtBoxLastName.TabIndex = 0;
             // 
             // txtBoxName
@@ -56,7 +56,7 @@ namespace MediaTek86.View
             this.txtBoxName.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxName.Location = new System.Drawing.Point(440, 121);
             this.txtBoxName.Name = "txtBoxName";
-            this.txtBoxName.Size = new System.Drawing.Size(418, 38);
+            this.txtBoxName.Size = new System.Drawing.Size(418, 23);
             this.txtBoxName.TabIndex = 1;
             // 
             // txtBoxTel
@@ -64,7 +64,7 @@ namespace MediaTek86.View
             this.txtBoxTel.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxTel.Location = new System.Drawing.Point(440, 204);
             this.txtBoxTel.Name = "txtBoxTel";
-            this.txtBoxTel.Size = new System.Drawing.Size(418, 38);
+            this.txtBoxTel.Size = new System.Drawing.Size(418, 23);
             this.txtBoxTel.TabIndex = 2;
             // 
             // txtBoxMail
@@ -72,7 +72,7 @@ namespace MediaTek86.View
             this.txtBoxMail.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxMail.Location = new System.Drawing.Point(440, 284);
             this.txtBoxMail.Name = "txtBoxMail";
-            this.txtBoxMail.Size = new System.Drawing.Size(418, 38);
+            this.txtBoxMail.Size = new System.Drawing.Size(418, 23);
             this.txtBoxMail.TabIndex = 3;
             // 
             // lstService
@@ -81,7 +81,7 @@ namespace MediaTek86.View
             this.lstService.FormattingEnabled = true;
             this.lstService.Location = new System.Drawing.Point(440, 370);
             this.lstService.Name = "lstService";
-            this.lstService.Size = new System.Drawing.Size(418, 39);
+            this.lstService.Size = new System.Drawing.Size(418, 25);
             this.lstService.TabIndex = 4;
             // 
             // lblLastName
@@ -90,7 +90,7 @@ namespace MediaTek86.View
             this.lblLastName.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLastName.Location = new System.Drawing.Point(299, 45);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(84, 31);
+            this.lblLastName.Size = new System.Drawing.Size(44, 17);
             this.lblLastName.TabIndex = 5;
             this.lblLastName.Text = "Nom :";
             // 
@@ -100,7 +100,7 @@ namespace MediaTek86.View
             this.lblName.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.Location = new System.Drawing.Point(263, 124);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(117, 31);
+            this.lblName.Size = new System.Drawing.Size(60, 17);
             this.lblName.TabIndex = 6;
             this.lblName.Text = "Prénom :";
             // 
@@ -110,7 +110,7 @@ namespace MediaTek86.View
             this.lblTel.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTel.Location = new System.Drawing.Point(229, 207);
             this.lblTel.Name = "lblTel";
-            this.lblTel.Size = new System.Drawing.Size(149, 31);
+            this.lblTel.Size = new System.Drawing.Size(76, 17);
             this.lblTel.TabIndex = 7;
             this.lblTel.Text = "Téléphone :";
             // 
@@ -120,7 +120,7 @@ namespace MediaTek86.View
             this.lblMail.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMail.Location = new System.Drawing.Point(309, 288);
             this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(75, 31);
+            this.lblMail.Size = new System.Drawing.Size(40, 17);
             this.lblMail.TabIndex = 8;
             this.lblMail.Text = "Mail :";
             // 
@@ -130,7 +130,7 @@ namespace MediaTek86.View
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(109, 373);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(259, 31);
+            this.label1.Size = new System.Drawing.Size(132, 17);
             this.label1.TabIndex = 9;
             this.label1.Text = "Service d\'affectation :";
             // 
@@ -143,6 +143,7 @@ namespace MediaTek86.View
             this.btnOk.TabIndex = 10;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = false;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnCancel
             // 
@@ -154,10 +155,11 @@ namespace MediaTek86.View
             this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "Annuler";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // PopUpPersonnel
+            // frmPopUpPersonnel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1001, 609);
             this.Controls.Add(this.btnCancel);
@@ -173,7 +175,7 @@ namespace MediaTek86.View
             this.Controls.Add(this.txtBoxName);
             this.Controls.Add(this.txtBoxLastName);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "PopUpPersonnel";
+            this.Name = "frmPopUpPersonnel";
             this.Text = "Ajouter / Modifier un personnel";
             this.ResumeLayout(false);
             this.PerformLayout();

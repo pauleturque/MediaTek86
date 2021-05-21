@@ -1,18 +1,25 @@
 ﻿<Properties StartupConfiguration="{0F04501B-8AB2-47C6-AF2E-F348A8626A2F}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="MediaTek86/Controler/Control.cs">
     <Files>
-      <File FileName="MediaTek86/ConnectionDB/Connect.cs" Line="1" Column="1" />
-      <File FileName="MediaTek86/Controler/Control.cs" Line="1" Column="1" />
+      <File FileName="MediaTek86/ConnectionDB/Connect.cs" Line="201" Column="4" />
+      <File FileName="MediaTek86/Controler/Control.cs" Line="30" Column="12" />
+      <File FileName="MediaTek86/dal/DataAccess.cs" Line="1" Column="3" />
+      <File FileName="MediaTek86/Model/Absence.cs" Line="1" Column="1" />
+      <File FileName="MediaTek86/View/frmConnection.cs" Line="39" Column="6" />
+      <File FileName="MediaTek86/View/frmAbsences.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MediaTek86" expanded="True">
             <Node name="MediaTek86" expanded="True">
+              <Node name="References" expanded="True" />
               <Node name="ConnectionDB" expanded="True" />
               <Node name="Controler" expanded="True">
                 <Node name="Control.cs" selected="True" />
               </Node>
+              <Node name="dal" expanded="True" />
+              <Node name="Model" expanded="True" />
               <Node name="View" expanded="True" />
             </Node>
           </Node>

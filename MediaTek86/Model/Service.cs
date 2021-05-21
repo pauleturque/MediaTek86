@@ -33,5 +33,10 @@ namespace MediaTek86.Model
             this.idservice = idservice;
             this.nom = nom;
         }
+
+        public override string ToString()
+        {
+            return nom;
+        }
     }
 }

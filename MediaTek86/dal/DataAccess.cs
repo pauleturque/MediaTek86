@@ -13,16 +13,20 @@ namespace MediaTek86.dal
         /// <summary>
         /// Chaîne de connexion à la base de données
         /// </summary>
-        private static string connectionString = "server = localhost; user id = root; database = bdd_mediatek";
+        private static string connectionString = "server = localhost; user id = root; database = bdd_mediatek; port = 3308";
 
         public static bool AuthenticationControl(string login, string pwd)
         {
-            string req = "SELECT * FROM responsable WHERE responsable.login = @login AND pwd = SHA256(@pwd, 256)";
+            string req = "SELECT responsable.login, responsable.pwd";
+            req += " FROM responsable ";
+            req += " WHERE responsable.login = SHA2(@login, 256) AND responsable.pwd = SHA2(@pwd, 256)";
             Dictionary<string, object> parameters = new Dictionary<string, object>();
-            parameters.Add(@login, login);
-            parameters.Add(pwd, pwd);
+            parameters.Add("@login", login);
+            parameters.Add("@pwd", pwd);
             Connect curseur = Connect.Instance(connectionString);
             curseur.ReqSelect(req, parameters);
+
+
             if (curseur.Read())
             {
                 curseur.Close();
@@ -39,7 +43,7 @@ namespace MediaTek86.dal
         {
             List<Personnel> lePersonnel = new List<Personnel>();
             string req = "SELECT * FROM Personnel ORDER BY nom, prenom";
-            ConnectionDB.Connect curseur = ConnectionDB.Connect.Instance(connectionString);
+            ConnectionDB.Connect curseur = Connect.Instance(connectionString);
             curseur.ReqSelect(req, null);
             while (curseur.Read())
             {
@@ -53,8 +57,8 @@ namespace MediaTek86.dal
         public static List<Service> GetServices()
         {
             List<Service> lesServices = new List<Service>();
-            string req = "SELECT Service.nom FROM Service ORDER BY Service.nom ASC";
-            ConnectionDB.Connect curseur = ConnectionDB.Connect.Instance(connectionString);
+            string req = "SELECT service.idservice, service.nom FROM Service ORDER BY Service.nom ASC";
+            Connect curseur = Connect.Instance(connectionString);
             curseur.ReqSelect(req, null);
             while (curseur.Read())
             {
@@ -69,8 +73,8 @@ namespace MediaTek86.dal
         {
             List<Absence> lesAbsences = new List<Absence>();
             string req = "SELECT a.idpersonnel, a.idmotif, a.datedebut, a.datefin ";
-            req += "FROM Absence a ORDER BY a.datedebut, a.datefin DESC";
-            ConnectionDB.Connect curseur = Connect.Instance(connectionString);
+            req += " FROM Absence a ORDER BY a.datedebut, a.datefin DESC";
+            Connect curseur = Connect.Instance(connectionString);
             curseur.ReqSelect(req, null);
             while (curseur.Read())
             {
@@ -85,7 +89,7 @@ namespace MediaTek86.dal
         {
             List<Motif> lesMotifs = new List<Motif>();
             string req = "SELECT m.idmotif, m.libelle FROM Motif m ORDER BY m.libelle";
-            ConnectionDB.Connect curseur = ConnectionDB.Connect.Instance(connectionString);
+            Connect curseur = Connect.Instance(connectionString);
             curseur.ReqSelect(req, null);
             while (curseur.Read())
             {
@@ -99,7 +103,7 @@ namespace MediaTek86.dal
         public static void AddPersonnel(Personnel personnel)
         {
             string req = "INSERT INTO Personnel(idpersonnel, idservice, nom, prenom, tel, mail)";
-            req += "values(@idpersonnel, @idservice, @nom, @prenom, @tel, @mail)";
+            req += " values(@idpersonnel, @idservice, @nom, @prenom, @tel, @mail)";
             Dictionary<string, object> parameters = new Dictionary<string, object>();
             parameters.Add("@idpersonnel", personnel.IdPersonnel);
             parameters.Add("@idservice", personnel.IdService);
@@ -138,7 +142,7 @@ namespace MediaTek86.dal
         public static void AddAbsence(Absence absence)
         {
             string req = "INSERT INTO absence(idpersonnel, idmotif, datedebut, datefin)";
-            req += "VALUES (@idpersonnel, @idmotif, @datedebut, @datefin)";
+            req += " VALUES (@idpersonnel, @idmotif, @datedebut, @datefin)";
             Dictionary<string, object> parameters = new Dictionary<string, object>();
             parameters.Add("@idpersonnel", absence.IdPersonnel);
             parameters.Add("@idmotif", absence.IdMotif);
@@ -160,7 +164,7 @@ namespace MediaTek86.dal
         public static void UpdateAbsence(Absence absence)
         {
             string req = "UPDATE absence SET idpersonnel = @idpersonnel, idmotife = @idmotif, datedebut = @datedebut, datefin = @datefin";
-            req += "WHERE idpesonnel = @idpesonnel";
+            req += " WHERE idpesonnel = @idpesonnel";
             Dictionary<string, object> parameters = new Dictionary<string, object>();
             parameters.Add("@idpersonnel", absence.IdPersonnel);
             parameters.Add("@idservice", absence.IdMotif);
@@ -168,6 +172,19 @@ namespace MediaTek86.dal
             parameters.Add("@prenom", absence.DateFin);
             Connect connect = Connect.Instance(connectionString);
             connect.ReqUpdate(req, parameters);
+        }
+
+        internal static string GetStringSha256Hash(string text)
+        {
+            if (string.IsNullOrEmpty(text))
+                return string.Empty;
+
+            using (var sha = new System.Security.Cryptography.SHA256Managed())
+            {
+                byte[] textData = System.Text.Encoding.UTF8.GetBytes(text);
+                byte[] hash = sha.ComputeHash(textData);
+                return BitConverter.ToString(hash).Replace("-", string.Empty);
+            }
         }
     }
 }
